@@ -1,4 +1,4 @@
-<config configName="default" projectName="NRF_Sensor_New" configVersion="1.1" device="PIC16F1619" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.14">
+<config configName="default" projectName="NRF_Sensor_New" configVersion="1.1" device="PIC16F1619" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.5.7">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -4959,30 +4959,46 @@
          <value>WDT window violation reset has not occurred</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>main.c</file>
-         <hash>02d7faaf8c0ab13b3a82fde24bbb1859ab7db89cfa71c423323e351d2f4ff417</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.c</file>
-         <hash>6bed58cf8b0a1bf92cd2a6aea1036215a20c661e9a7556fd69363be8756e4caa</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.h</file>
-         <hash>de01a40a3c47c7660ddaebc4fdfbe286c6a5a2073c8d6351541b835871338849</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>42930983899548e38a2b2e758197a8c46da528358545ba901c9bed148c4a40a1</hash>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>ca55f377e4b612fef6d0d71c339e005432e028495b73f6035ef2b002113f1abd</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>fc9f288aecff9e573a8be258c1307c72d0f7d1681cd3b7a9e39b240be0eaec30</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\examples\i2c_master_example.c</file>
-         <hash>c47ce643a63c7ffe5de64edbda9fe817cf01311d244795d3d9830718edb7afbf</hash>
+         <file>mcc_generated_files\i2c_master.c</file>
+         <hash>57732772ebe08bbe100b11760bca2d8b4e51b3ddffc68a912e393eee0ca334b3</hash>
+      </entry>
+      <entry>
+         <file>main.c</file>
+         <hash>02d7faaf8c0ab13b3a82fde24bbb1859ab7db89cfa71c423323e351d2f4ff417</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>42930983899548e38a2b2e758197a8c46da528358545ba901c9bed148c4a40a1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\i2c_master.h</file>
+         <hash>34ea237705ea6a13cb012ed4987f9da699a76269a4ae275e089890e5a81d1207</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>4b7e1ed00b4a9aad9cab0adb6b72d13e275910d771bf76a34988b5afcb21fb6a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc.h</file>
+         <hash>de01a40a3c47c7660ddaebc4fdfbe286c6a5a2073c8d6351541b835871338849</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>c8fbfb1cbb0292b6eb852b46276c8d998f8f8f3d167c384886ac3cd49e0fe591</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\fvr.h</file>
+         <hash>9df371e97961c21a5a90a4b8e90a06226233bb416ed2b7ded23e8765d5e0c13b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\examples\i2c_master_example.h</file>
@@ -4993,32 +5009,16 @@
          <hash>932762c41f083a423c5dcc99978c2a3f2fd7b140253ebacc6265fcdaf3a4b983</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\fvr.h</file>
-         <hash>9df371e97961c21a5a90a4b8e90a06226233bb416ed2b7ded23e8765d5e0c13b</hash>
+         <file>mcc_generated_files\adc.c</file>
+         <hash>6bed58cf8b0a1bf92cd2a6aea1036215a20c661e9a7556fd69363be8756e4caa</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\i2c_master.c</file>
-         <hash>57732772ebe08bbe100b11760bca2d8b4e51b3ddffc68a912e393eee0ca334b3</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\i2c_master.h</file>
-         <hash>34ea237705ea6a13cb012ed4987f9da699a76269a4ae275e089890e5a81d1207</hash>
+         <file>mcc_generated_files\examples\i2c_master_example.c</file>
+         <hash>c47ce643a63c7ffe5de64edbda9fe817cf01311d244795d3d9830718edb7afbf</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>e99bc2faf6d5cde98a3f8a6bfb738eb3d345e2b9a2541b6dbca5ca4c57f26c76</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>ca55f377e4b612fef6d0d71c339e005432e028495b73f6035ef2b002113f1abd</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>c8fbfb1cbb0292b6eb852b46276c8d998f8f8f3d167c384886ac3cd49e0fe591</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>4b7e1ed00b4a9aad9cab0adb6b72d13e275910d771bf76a34988b5afcb21fb6a</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

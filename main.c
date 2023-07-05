@@ -75,7 +75,7 @@ uint8_t pipe_num = 0;
 uint8_t interval = 0x0b;
 uint8_t try_counter;
 bool send_ok_flag = false;
-
+extern uint32_t volt;
 
 
 void Init_NRF(void)
@@ -162,7 +162,7 @@ while (1)
     WDTCON0 = 0x15;
     Start_conversion(); 
 
-    
+           
     
     if(!send_ok_flag)     // ≈сли за заданное число попыток так и не получили подтверждени€ приема и ответ
       Init_NRF();         // на вс€кий случай проинитим заново трансивер
@@ -188,7 +188,8 @@ while (1)
             break;
       // __delay_us(30000);
    }
-    GetBatteryVoltage();
+    //GetBatteryVoltage();
+    buf_for_response[2]  = (uint16_t)volt;
     powerDown();                    // ¬ыключим трансивер
     WDTCON0 = (interval << 1) | 1;  // ”становим WatchDog на интервал полученный в ответе, чтобы он разбудил процессор                 
     LED_SetHigh();  

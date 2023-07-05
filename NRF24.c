@@ -17,6 +17,7 @@ bool dynamic_payloads_enabled; /**< Whether dynamic payloads are enabled. */
 uint8_t pipe0_reading_address[5] = {0,}; /**< Last address set on pipe 0 for reading. */
 uint8_t addr_width = 0; /**< The address width to use - 3,4 or 5 bytes. */
 uint8_t txDelay = 0;
+uint32_t volt;
 
 
 static const uint8_t child_pipe_enable[] = {ERX_P0, ERX_P1, ERX_P2, ERX_P3, ERX_P4, ERX_P5};
@@ -227,19 +228,16 @@ void startFastWrite(const void* buf, uint8_t len, const bool multicast, bool sta
 
 bool write(const void* buf, uint8_t len)
 {
- //   uint16_t Timeout_counter = 0;
     
 	startFastWrite(buf, len, 1, 1);
 
+    FVRCON = 0x82;  
+    volt = ADC_GetConversion(channel_AN2);
+    FVRCON = 0x02;
 	while(!(get_status() & ((1 << TX_DS) | (1 << MAX_RT))))
-	{
-   /*     Timeout_counter++;
-        if(Timeout_counter == 0)
-        {
-            flush_tx();
-            return 0; 
-        }*/
-    }
+        continue;
+
+
 
 	NRF_CE_SetLow();
 	uint8_t status = write_register(NRF_STATUS, (1 << RX_DR) | (1 << TX_DS) | (1 << MAX_RT));
