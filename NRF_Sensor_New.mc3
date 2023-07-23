@@ -440,11 +440,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="adfvrVoltage"/>
-         <value>2.048 V</value>
+         <value>1.024 V</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="cdafvrVoltage"/>
-         <value/>
+         <value></value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR" alias="1x"/>
@@ -512,11 +512,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="FVR" registerAlias="FVRCON"/>
-         <value>130</value>
+         <value>129</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR"/>
-         <value>2x</value>
+         <value>1x</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="CDAFVR"/>
@@ -4997,16 +4997,16 @@
          <hash>c8fbfb1cbb0292b6eb852b46276c8d998f8f8f3d167c384886ac3cd49e0fe591</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\fvr.h</file>
-         <hash>9df371e97961c21a5a90a4b8e90a06226233bb416ed2b7ded23e8765d5e0c13b</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\examples\i2c_master_example.h</file>
          <hash>4a7c7839cae1dbef1daecdaca427fc94712c11c2d3a91db26ace0a5f4e5fe083</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\fvr.h</file>
+         <hash>9df371e97961c21a5a90a4b8e90a06226233bb416ed2b7ded23e8765d5e0c13b</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\fvr.c</file>
-         <hash>932762c41f083a423c5dcc99978c2a3f2fd7b140253ebacc6265fcdaf3a4b983</hash>
+         <hash>91b2fd3f3443f3165170e5294a6e41e54b112ce40ba51a206e6f66a23a819fab</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adc.c</file>

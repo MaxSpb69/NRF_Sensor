@@ -114,7 +114,7 @@ void Start_conversion(void)
 void GetBatteryVoltage(void)
 {
    uint32_t volt;
-   FVRCON = 0x82;
+   FVRCON = 0x81;
    volt = ADC_GetConversion(channel_AN2);
    __delay_ms(2);
     volt += ADC_GetConversion(channel_AN2);
@@ -122,7 +122,7 @@ void GetBatteryVoltage(void)
     volt += ADC_GetConversion(channel_AN2);
     buf_for_response[2]  = (uint16_t)(volt / 3);
 //    buf_for_response[2]  = ADC_GetConversion(channel_AN2);
-    FVRCON = 0x02;
+    FVRCON = 0x01;
 
 }
 
@@ -194,8 +194,8 @@ while (1)
     WDTCON0 = (interval << 1) | 1;  // ”становим WatchDog на интервал полученный в ответе, чтобы он разбудил процессор                 
     LED_SetHigh();  
     
-    SLEEP();                        // —ѕј“№!!!!!
-    //__delay_us(3000000);
+   SLEEP();                        // —ѕј“№!!!!!
+   // __delay_us(3000000);
     
   } // while(1)
 }

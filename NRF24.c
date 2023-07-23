@@ -231,10 +231,10 @@ bool write(const void* buf, uint8_t len)
     
 	startFastWrite(buf, len, 1, 1);
 
-    FVRCON = 0x82;  
+    FVRCON = 0x81;  
     volt = ADC_GetConversion(channel_AN2);
-    FVRCON = 0x02;
-	while(!(get_status() & ((1 << TX_DS) | (1 << MAX_RT))))
+    FVRCON = 0x01;
+ 	while(!(get_status() & ((1 << TX_DS) | (1 << MAX_RT))))
         continue;
 
 
